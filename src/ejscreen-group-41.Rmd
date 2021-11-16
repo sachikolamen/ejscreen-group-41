@@ -1,0 +1,20 @@
+---
+title: "Group 41 CA pollution burden"
+author: "Sachiko Lamen, Chase Tarr"
+date: "11/16/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+## Read in data and clean names
+```{r}
+ces <- read_csv(here("data", "ces3demographics.csv")) %>%
+  clean_names()
+```
+
