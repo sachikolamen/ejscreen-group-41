@@ -26,8 +26,13 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   scale_fill_gradient(low = "mediumorchid4", high = "turquoise1") +
   theme_minimal() +
   labs(x = "Percent White",
-       y = "CalEnviroScreen 3.0 Score") +
-   theme(plot.caption = element_text(hjust = 0.5))
+       y = "CalEnviroScreen 3.0 Score",
+       title = "CalEnviroscreen 3.0 score comparison to percent white population") +
+   theme(plot.caption = element_text(hjust = 0.5)) +
+  theme(panel.background = element_rect(fill = 'orange'),
+          panel.grid.major = element_line(color = 'red', linetype = 'dotted'),
+          panel.grid.minor = element_line(color = 'green', size = 0.5)) +
+  theme(text = element_text(family="Times", size=16))
 ```
 
 **Figure 1** High CalEnviroScreen3.0 (CES3.0) scores indicate high cumulative pollution burdens. Each hexagon and it's corresponding fill color represents the number of census tracts at each value.
