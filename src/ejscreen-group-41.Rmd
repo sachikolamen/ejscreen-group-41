@@ -4,7 +4,9 @@ author: "Sachiko Lamen, Chase Tarr"
 date: "11/16/2021"
 output: html_document
 ---
-
+## Overview
+This data, known as the CalEnviroScreen 3.0, is an Environmental Community Health Screening Tool focusing on pollution burden and socioeconomic vulnerabilities in communities. This is cross evaluated with populations of race to determine if communities with a higher percentage of white individuals experience less pollution and socioeconomic vulnerability. Higher CalEnviroScreen scores indicate high pollution burdens and vulnerable population characterstics. 
+**Citation:** https://caleja.org/wp-content/uploads/2015/09/CES3.0-5.pdf
 ```{r setup, include=FALSE, warning = FALSE, message = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 library(tidyverse)
